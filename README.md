@@ -4,6 +4,8 @@
 
 A simple project for demonstrating the usage of Adobe Experience Manager's [Assets API over HTTP][l2].
 
+A 2 step process that 1) creates the asset in AEM 2) Updates it's meta-data properties
+
 # Usage
 - Requires [PostMan][l3]
 - Import "AEMAssets.postman_collection.json"
