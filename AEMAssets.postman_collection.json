@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "d9e48539-3b12-422b-8ade-da1ed0af84ef",
+		"name": "AEMAssets",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateAsset",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "image/png",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {}
+				},
+				"url": {
+					"raw": "http://localhost:4502/api/assets/myAsset.png",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4502",
+					"path": [
+						"api",
+						"assets",
+						"myAsset.png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMetaData",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"class\":\"asset\", \"properties\":{\"dc:title\":\"My NEW Asset\"}}"
+				},
+				"url": {
+					"raw": "http://localhost:4502/api/assets/myAsset.png",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4502",
+					"path": [
+						"api",
+						"assets",
+						"myAsset.png"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
