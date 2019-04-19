@@ -8,7 +8,7 @@ A 2 step process that 1) creates the asset in AEM 2) Updates it's meta-data prop
 
 # Usage
 - Requires [PostMan][l3]
-- Import "AEMAssets.postman_collection.json"
+- Import "AEMAssets.postman_collection.json"  (Uses collection format [v2.1][l1])
 
 
    [l1]:<https://blog.getpostman.com/2015/06/05/travelogue-of-postman-collection-format-v2/>
